@@ -50,16 +50,19 @@ const Events = () => {
           or connect, there's something for everyone! Stay tuned, participate,
           and make unforgettable memories.{" "}
         </p>
+      <div className={styles.allcards}>
         {events.map((event) => (
           <div className={styles.card} key={event.id}>
             <img src={event.image} alt="" />
             <div className={styles.con}>
               <h1>{event.name}</h1>
               <p>{event.description}</p>
-              <a href={`event/${event.name}`}>Click here </a>
+              <a href={`event/${event.name}`}>Show more </a>
             </div>
           </div>
+        
         ))}
+        </div>
       </section>
     </>
   );

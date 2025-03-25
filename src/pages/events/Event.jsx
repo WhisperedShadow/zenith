@@ -30,7 +30,7 @@ const Event = () => {
       <h1>Event {id}</h1>
       <div id="con" className={styles.con}></div>
       <p className={styles.apply}>
-        <a href={events.form}>Apply here</a>
+        <a href={events.form}>Register Now</a>
       </p>
     </section>
   );
