@@ -31,7 +31,7 @@ const Events = () => {
   if (loading) {
     return (
       <div className={styles.loading}>
-        <img src="/loading/loading.gif" alt="" className={styles.loadimg}/>
+        <img src="/loading/loading.gif" alt="" className={styles.loadimg} />
       </div>
     );
   }
@@ -44,7 +44,7 @@ const Events = () => {
     <>
       <section>
         <h1>{type} Events</h1>
-
+        
         {events.map((event) => (
           <div className={styles.card} key={event.id}>
             <img src={event.image} alt="" />

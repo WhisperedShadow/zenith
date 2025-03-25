@@ -11,21 +11,27 @@ const Event = () => {
   useEffect(() => {
     setLoading(true);
     eventCollect(id).then((data) => {
-      setEvents(data[0]);
+      setEvents(data);
       setLoading(false);
       console.log(data);
-      document.getElementById("con").innerHTML = data[0].content;
+      document.getElementById("con").innerHTML = data.content;
     });
   }, [id]);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return (
+      <div className={styles.loading}>
+        <img src="/loading/loading.gif" alt="" className={styles.loadimg} />
+      </div>
+    );
   }
   return (
     <section>
       <h1>Event {id}</h1>
       <div id="con" className={styles.con}></div>
-      <p className={styles.apply}><a href={events.form} >Apply here</a></p>
+      <p className={styles.apply}>
+        <a href={events.form}>Apply here</a>
+      </p>
     </section>
   );
 };

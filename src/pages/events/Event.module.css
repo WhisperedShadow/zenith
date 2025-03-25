@@ -51,3 +51,15 @@
   color: white;
 }
 
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading .loadimg {
+  width: 50%;
+  height: auto;
+}
