@@ -44,7 +44,12 @@ const Events = () => {
     <>
       <section>
         <h1>{type} Events</h1>
-        
+        <p className={styles.intro}>
+          Explore a diverse range of exciting events, from tech innovations to
+          creative non-tech experiences. Whether you're here to learn, compete,
+          or connect, there's something for everyone! Stay tuned, participate,
+          and make unforgettable memories.{" "}
+        </p>
         {events.map((event) => (
           <div className={styles.card} key={event.id}>
             <img src={event.image} alt="" />

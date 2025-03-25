@@ -8,9 +8,8 @@ const Navbar = () => {
   return (
     <div>
       <nav className={styles.navbar}>
-        <img src="/logo/nklogo.png" alt="" className={styles.logoimg}/>
+        <img src="/hero/worstlogo.png" alt="" className={styles.logoimg}/>
         
-        {/* Hamburger Icon */}
         <div 
           className={styles.hamburger} 
           onClick={() => setIsOpen(!isOpen)}
