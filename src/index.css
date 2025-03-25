@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+section{
+    min-height: 100vh;
+}
+
 section h1{
     text-align: center;
     margin-top: 20px;
@@ -11,6 +15,7 @@ section h1{
 }
 
 body{
+    background-image: url('/logo/R.jpg');
     background-size: cover;
     background-color: white;
 }

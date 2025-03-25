@@ -22,7 +22,7 @@ const Contact = () => {
   const organizations = [studentCoordinates, eventOrganizers];
 
   return( <section>
-    <h1>Contact Page
+    <h1>Contact Page</h1>
 {organizations.map((organization)=>{
   return (
     <div key={organization.name}>
@@ -39,7 +39,7 @@ const Contact = () => {
   )
 })}
 
-    </h1>
+    
   </section>);
 };
 
