@@ -8,6 +8,7 @@
   }
   
   .footerContent {
+    margin: 50px 0;
     min-width: 200px;
     text-align: left;
   }
@@ -63,5 +64,10 @@
   
   .footerLink a:hover p::before {
     width: 100%;
+  }
+
+  .map{
+    width: 100%;
+    height: 300px;
   }
   

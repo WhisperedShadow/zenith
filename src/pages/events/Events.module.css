@@ -52,3 +52,14 @@
   background-color: red;
   border-radius: 5px;
 }
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading .loadimg {
+  width: 50%;
+  height: auto;
+}
