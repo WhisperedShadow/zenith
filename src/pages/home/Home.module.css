@@ -7,7 +7,7 @@
 }
 
 .log {
-  width: 80%;
+  width: 70%;
   position: absolute;
   z-index: 1;
   pointer-events: none;
@@ -19,7 +19,7 @@
 .hero {
   z-index: 2;
   pointer-events: none;
-  height: 130%;
+  height: 150%;
   width: auto;
   position: absolute;
   transform: translateY(100%);
@@ -44,7 +44,7 @@
     transform: translateY(100%);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(10%);
   }
   
 }

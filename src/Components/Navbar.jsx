@@ -1,4 +1,3 @@
-// Navbar.jsx
 import React, { useState } from 'react';
 import styles from './Navbar.module.css';
 
@@ -19,7 +18,6 @@ const Navbar = () => {
           <div className={styles.line}></div>
         </div>
 
-        {/* Navigation Links */}
         <ul className={`${styles.navbarList} ${isOpen ? styles.active : ''}`}>
           <li><a href="/">HOME</a></li>
           <li><a href="/tech">TECHNICAL</a></li>
