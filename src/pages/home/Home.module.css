@@ -26,6 +26,14 @@
   animation: bottom-up 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s 1 forwards;
 }
 
+.petal{
+  z-index: 3;
+  pointer-events: none;
+  height: 80%;
+  width: 80%;
+  position: absolute;
+}
+
 .about {
   background-color: yellow;
 }
