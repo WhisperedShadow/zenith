@@ -29,7 +29,11 @@ const Events = () => {
   }, [type]);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return (
+      <div className={styles.loading}>
+        <img src="/loading/loading.gif" alt="" className={styles.loadimg}/>
+      </div>
+    );
   }
 
   if (!type) {

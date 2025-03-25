@@ -25,7 +25,7 @@ const Event = () => {
     <section>
       <h1>Event {id}</h1>
       <div id="con" className={styles.con}></div>
-      <a href={events.form}>Apply here</a>
+      <p className={styles.apply}><a href={events.form} >Apply here</a></p>
     </section>
   );
 };
