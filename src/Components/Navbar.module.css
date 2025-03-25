@@ -1,6 +1,8 @@
 .navbar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
     background-color: #c10101;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -9,42 +11,70 @@
     left: 0;
 }
 
+.logoimg {
+    width: 100px;
+    height: 100px;
+}
+
 .navbarList {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     color: white;
     list-style-type: none;
+    font-family: sans-serif;
     font-weight: 700;
-    font-size: medium;
-    flex-wrap: wrap;
+    font-size: larger;
 }
 
 .navbarList li a {
     text-decoration: none;
     color: white;
-    position: relative;
-    padding: 4px 0; 
-    display: inline-block;
-    text-align: center;
 }
 
-.navbarList li a::before {
-    content: "";
-    position: absolute;
-    width: 0%;
+.navbarList li a:hover {
+    color: red;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
     background-color: white;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    transition: width 0.5s ease-in-out;
-    transform: translateX(-50%);
+    margin: 5px;
+    border-radius: 3px;
 }
 
-.navbarList li a:hover::before {
-    width: 100%;
-}
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        z-index: 999;
+    }
 
-.logoimg {
-    width: 100px;
-    height: 100px;
+    .navbarList {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        gap: 0;
+        flex-direction: column;
+        background-color: #c10101;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding-top: 120px;
+        height: 100vh;
+    }
+
+    .navbarList li {
+        margin: 16px 0;
+    }
+
+    .navbarList.active {
+        right: 0;
+    }
 }
