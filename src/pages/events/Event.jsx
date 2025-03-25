@@ -14,9 +14,11 @@ const Event = () => {
       setEvents(data);
       setLoading(false);
       console.log(data);
-      document.getElementById("con").innerHTML = data.content;
+      
+      
     });
   }, [id]);
+  
 
   if (loading) {
     return (
@@ -28,7 +30,7 @@ const Event = () => {
   return (
     <section>
       <h1>Event {id}</h1>
-      <div id="con" className={styles.con}></div>
+      <div className={styles.con} dangerouslySetInnerHTML={{ __html: events.content }}></div>
       <p className={styles.apply}>
         <a href={events.form}>Register Now</a>
       </p>

@@ -14,10 +14,9 @@
   transform: translateY(-100%);
   height: auto;
   animation: top-down 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s 1 forwards;
-  
 }
 
-.regbtn a{
+.regbtn a {
   text-decoration: none;
   color: red;
 }
@@ -32,7 +31,7 @@
   animation: bottom-up 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s 1 forwards;
 }
 
-.petal{
+.petal {
   z-index: 3;
   pointer-events: none;
   height: 80%;
@@ -41,80 +40,95 @@
 }
 
 .about {
-  background-color:black;
+  background-color: #c10101;
   color: white;
   padding: 70px;
   display: flex;
   flex-direction: row;
 }
 
-
-
-
-.heading{
-  color: red;
+.heading {
+  color: white;
   font-size: 69px;
   font-weight: 700;
   margin-bottom: 20px;
-  font-family: madefor-display-bold, helveticaneuew01-65medi, helveticaneuew02-65medi, helveticaneuew10-65medi, sans-serif;
-
-
+  font-family: madefor-display-bold, helveticaneuew01-65medi,
+    helveticaneuew02-65medi, helveticaneuew10-65medi, sans-serif;
 }
 
-.regbtn{
-  background-color:transparent;
-  color: #c10101;
-  
-  border: 2px solid #c10101;
+.regbtn {
+  background-color: transparent;
+  color: #fff;
+  position: relative;
+  border: 2px solid #fff;
   padding: 10px 20px;
   border-radius: 10px;
   font-size: 20px;
   font-weight: 600;
   margin-top: 20px;
+  overflow: hidden;
   cursor: pointer;
-  
 }
 
+.regbtn a {
+  color: #fff;
+}
 
-.aboutCon{
+.regbtn:hover a {
+  color: #c10101;
+}
+
+.regbtn a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  transition: all 0.5s;
+}
+
+.regbtn:hover a::before {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutCon {
   display: none;
   opacity: 0;
 }
 
-.logocon{
+.logocon {
   display: none;
   opacity: 0;
 }
-.about:hover{
-   cursor: pointer;
-  .logocon{
+.about:hover {
+  cursor: pointer;
+  .logocon {
     display: block;
 
-    animation: right-left 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s 0.5 forwards;
+    animation: right-left 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s 0.5
+      forwards;
   }
-  .aboutCon{
+  .aboutCon {
     display: block;
-    animation: left-to-right 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s 0.5 forwards;
+    animation: left-to-right 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s 0.5
+      forwards;
   }
-
 }
-
-
 
 @keyframes left-to-right {
   from {
     transform: translateX(-100%);
     opacity: 0;
-
   }
   to {
     transform: translateX(0);
     opacity: 1;
-
   }
 }
-
-
 
 @keyframes right-left {
   from {
@@ -126,7 +140,6 @@
     opacity: 1;
   }
 }
-
 
 @keyframes top-down {
   0% {
@@ -144,9 +157,7 @@
   100% {
     transform: translateY(10%);
   }
-  
 }
-
 
 .eventtimer {
   display: flex;
@@ -156,25 +167,30 @@
   position: relative;
   overflow: hidden;
   border-radius: 15px;
- height: 700px;
+  height: 700px;
   background-color: transparent;
 }
 
-
 .eventtimer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(255,255,255,0.1) 0%, transparent 50%);
+  background: radial-gradient(
+      circle at 20% 30%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    );
   animation: movingGradient 15s ease infinite alternate;
   opacity: 0.7;
 }
-
 
 @keyframes movingGradient {
   0% {
@@ -229,16 +245,12 @@
 
   padding: 1.5rem;
   border-radius: 15px;
-  box-shadow: 
-    0 10px 25px rgba(0, 0, 0, 0.05), 
-    0 4px 10px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(0, 0, 0, 0.03);
   backdrop-filter: blur(10px);
   transform: scale(0);
   animation: popIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   animation-delay: calc(0.1s * var(--i));
 }
-
-
 
 @keyframes popIn {
   0% {
@@ -270,59 +282,33 @@
   letter-spacing: 1px;
 }
 
-
-
 @media screen and (max-width: 768px) {
-   .log{
+  .log {
     height: 500px;
     width: 550px;
     margin-top: -270px;
-   }
+  }
 
-
-   .aboutCon{
+  .aboutCon {
     display: block;
     opacity: 1;
+  }
 
-   }
+  .logocon img {
+    display: none;
+  }
+  .heading {
+    font-size: 39px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    font-family: madefor-display-bold, helveticaneuew01-65medi,
+      helveticaneuew02-65medi, helveticaneuew10-65medi, sans-serif;
+  }
 
-   
-
-
-.logocon img{
-  display: none;
-  
-
+  .countdownGrid {
+    display: flex;
+    flex-direction: column;
+  }
 }
-.heading{
-  font-size: 39px;
-  font-weight: 200;
-  margin-bottom: 20px;
-  font-family: madefor-display-bold, helveticaneuew01-65medi, helveticaneuew02-65medi, helveticaneuew10-65medi, sans-serif;
-
-
-}
-
-
-.countdownGrid {
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-}
-
-
-
-
-
-
-
-
-
 
 /*event timer*/
-
-
-
