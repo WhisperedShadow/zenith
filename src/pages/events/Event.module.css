@@ -1,5 +1,33 @@
-.con * img{
-    width: auto;
-    height: 300px;
-    object-fit: cover;
+.con{
+    padding: 20px;
+}
+
+.con img {
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+}
+
+.con ol {
+  list-style: decimal;
+  padding-left: 50px;
+}
+
+.con ol li {
+  padding: 5px 0px;
+}
+
+.con ul {
+  list-style: none;
+  padding-left: 50px;
+}
+
+.con ul li::before {
+  content: "🌸";
+  margin-right: 8px;
+  font-size: 1em;
+}
+
+.con ul li {
+  padding: 5px 0;
 }
