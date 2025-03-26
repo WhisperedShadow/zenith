@@ -16,7 +16,22 @@ const Home = () => {
           <h3 className={styles.heading}>WELCOME TO <br/>ZENITH'25</h3>
           <h2>A National Level Technical Symposium</h2>
           <br/>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit omnis eum soluta eius nulla tempore fugit! Excepturi explicabo nesciunt corporis voluptas molestias facilis possimus? Temporibus veniam mollitia voluptate culpa doloribus explicabo, blanditiis, veritatis praesentium quisquam eligendi illum unde voluptatibus est reprehenderit quia inventore asperiores necessitatibus eaque suscipit minus minima! Eligendi architecto voluptatum mollitia numquam sint nemo reprehenderit necessitatibus! Numquam, natus! Magni, in reiciendis, consectetur incidunt nulla exercitationem soluta voluptatum sint repellat, eum similique temporibus hic dolorem eos inventore eius eligendi? Nesciunt ipsam magni assumenda obcaecati, quas ex amet ullam corrupti natus non suscipit omnis delectus nisi voluptates eius accusantium aperiam?</p> 
+          <p>Jeppiaar Engineering College was one among the most emerging 
+colleges in Chennai, was established in the year 2001.
+The college offers thestudents in their pursuit of Academic 
+Excellence enriching integral growth as well as intellectual, emotional, 
+spiritual and social identity, the authenticity 
+of Jeppiaar Engineering College, located in the Jeppiaar Nagar, 
+Chennai.
+ Jeppiaar Engineering College is a Self-financed, co-educational 
+institution and affiliated to Anna University and in the short 
+period it has grown into an institution that provides excellent 
+technical education while keeping the overall growth and development 
+of the students in mind.
+Department of Computer Science and Engineering with 422 students 
+are aimed to develop leadership quality and competency among the 
+students. Thus we decided to conduct a National 
+level technical Symposium for the benefit of the students.</p>
           <br/> 
           <button className={styles.regbtn}><a href="/tech">Register now</a></button>  
 
