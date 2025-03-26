@@ -222,7 +222,7 @@
   }
 }
 
-.con p * {
-  animation: scroll-animation;
+.con p * *{
+  animation: scroll-animation !important;
   animation-timeline: view(99% auto);
 }
