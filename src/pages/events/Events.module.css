@@ -14,6 +14,16 @@
   flex-wrap: wrap;
   flex-direction:row ;
 }
+
+.moon{
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: red;
+  position: absolute;
+  align-items: center;
+}
+
 .card {
   
   margin: 50px;
@@ -81,6 +91,7 @@
 .loading .loadimg {
   width: 50%;
   height: auto;
+  z-index: 100;
 }
 
 

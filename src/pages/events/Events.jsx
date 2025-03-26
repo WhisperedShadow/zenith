@@ -31,6 +31,7 @@ const Events = () => {
   if (loading) {
     return (
       <div className={styles.loading}>
+        <div className={styles.moon}></div>
         <img src="/loading/loading.gif" alt="" className={styles.loadimg} />
       </div>
     );

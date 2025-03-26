@@ -5,7 +5,18 @@
   overflow: hidden;
   position: relative;
 }
+.jpnzenith ,h4{
+  color:red;
+  font-size: 69px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
 
+
+
+
+
+}
 .log {
   width: 70%;
   position: absolute;
@@ -37,6 +48,18 @@
   height: 80%;
   width: 80%;
   position: absolute;
+
+}
+
+.petal2 {
+  z-index: 3;
+  pointer-events: none;
+  height: 100%;
+  width: 80%;
+  position: absolute;
+  
+    transform: scaleX(-1);
+  
 }
 
 .about {
@@ -164,11 +187,11 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  position: relative;
   overflow: hidden;
   border-radius: 15px;
   height: 700px;
   background-color: transparent;
+  position: relative;
 }
 
 .eventtimer::before {
@@ -312,3 +335,133 @@
 }
 
 /*event timer*/
+.countdownContainer {
+  perspective: 1000px;
+}
+
+.countdownGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.countdownItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 0, 0, 0.5);
+  padding: 1.5rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.digitWrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  perspective: 400px;
+}
+
+.digitCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.digitCard.animating {
+  animation: flip 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.digitFront,
+.digitBack,
+.digitTop,
+.digitBottom {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  font-size: 4rem;
+  font-weight: bold;
+  color: red;
+  background-color: transparent;
+}
+
+.digitFront {
+  z-index: 2;
+}
+
+.digitBack {
+  transform: rotateX(180deg);
+}
+
+.digitTop {
+  transform: rotateX(-90deg);
+  transform-origin: bottom center;
+}
+
+.digitBottom {
+  transform: rotateX(90deg);
+  transform-origin: top center;
+}
+
+.digitCard.animating .digitFront {
+  transform: rotateX(-90deg);
+}
+
+.digitCard.animating .digitTop {
+  transform: rotateX(0);
+}
+
+.digitCard.animating .digitBack {
+  transform: rotateX(180deg);
+}
+
+.digitCard.animating .digitBottom {
+  transform: rotateX(0);
+}
+
+.countdownLabel {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 0, 0, 0.7);
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0);
+  }
+  50% {
+    transform: rotateX(-90deg);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .countdownGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .digitWrapper {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .digitFront,
+  .digitBack,
+  .digitTop,
+  .digitBottom {
+    font-size: 3rem;
+  }
+}
