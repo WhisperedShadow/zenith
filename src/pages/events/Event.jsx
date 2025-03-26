@@ -29,7 +29,7 @@ const Event = () => {
   }
   return (
     <section>
-      <h1>Event {id}</h1>
+      <h1 className={styles.event}>Event : {id}</h1>
       <div className={styles.con} dangerouslySetInnerHTML={{ __html: events.content }}></div>
       <p className={styles.apply}>
         <a href={events.form}>Register Now</a>

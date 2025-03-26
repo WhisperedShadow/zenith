@@ -1,45 +1,104 @@
 .con {
-  padding: 20px;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  padding: 50px;
+  color: #333;
+}
+
+.event,
+.con h2,
+.con h3 {
+  font-family: "Arial", sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.event {
+  color: #08203e;
+  font-size: 2.3rem;
+}
+
+.con h2 {
+  font-size: 1.8rem;
+  color: #08203e;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-left: 5px solid #557c93;
+  padding-left: 10px;
+}
+
+.con h3 {
+  font-size: 1.5rem;
+  color: #557c93;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #557c93;
+  display: inline-block;
+  animation: slideIn 1s ease-in-out;
 }
 
 .con p {
-  font-size: 1.1em;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: justify;
+  transition: transform 0.3s ease-in-out;
 }
 
-.con p:has(> img) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.con p:hover {
+  transform: scale(1.02);
 }
 
-.con img {
-  width: auto;
-  height: 500px;
-  object-fit: cover;
+.con strong {
+  font-weight: bold;
+  color: #e43944;
+  transition: color 0.3s;
 }
 
+.con strong:hover {
+  color: #1d3557;
+}
+
+.con ul,
 .con ol {
-  list-style: decimal;
-  padding-left: 50px;
-}
-
-.con ol li {
-  padding: 5px 0;
+  margin: 10px 0;
+  padding-left: 20px;
 }
 
 .con ul {
   list-style: none;
+}
+
+.con ul li,
+.con ol li {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  position: relative;
+  animation: fadeInUp 0.6s ease-in-out;
+}
+
+.con ul li {
   padding-left: 50px;
 }
 
 .con ul li::before {
   content: "🌸";
-  margin-right: 8px;
-  font-size: 1em;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  font-size: 1.2rem;
 }
 
-.con ul li {
-  padding: 5px 0;
+.con img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.con img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .apply {
@@ -97,4 +156,54 @@
   width: 50%;
   height: auto;
   max-width: 300px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .con {
+    padding: 10px;
+  }
+  .con h2 {
+    font-size: 1.5rem;
+  }
+  .con h3 {
+    font-size: 1.3rem;
+  }
+  .con p,
+  .con ul li,
+  .con ol li {
+    font-size: 0.95rem;
+  }
 }

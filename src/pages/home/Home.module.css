@@ -5,17 +5,13 @@
   overflow: hidden;
   position: relative;
 }
-.jpnzenith ,h4{
-  color:red;
+.jpnzenith,
+h4 {
+  color: red;
   font-size: 69px;
   font-weight: 700;
   display: flex;
   flex-direction: row;
-
-
-
-
-
 }
 .log {
   width: 70%;
@@ -48,7 +44,6 @@
   height: 80%;
   width: 80%;
   position: absolute;
-
 }
 
 .petal2 {
@@ -57,9 +52,7 @@
   height: 100%;
   width: 80%;
   position: absolute;
-  
-    transform: scaleX(-1);
-  
+  transform: scaleX(-1);
 }
 
 .about {
@@ -310,6 +303,7 @@
     height: 500px;
     width: 550px;
     margin-top: -270px;
+    display: none;
   }
 
   .aboutCon {
@@ -452,12 +446,12 @@
   .countdownGrid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .digitWrapper {
     width: 70px;
     height: 70px;
   }
-  
+
   .digitFront,
   .digitBack,
   .digitTop,
