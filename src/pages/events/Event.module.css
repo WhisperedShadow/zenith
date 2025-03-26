@@ -9,7 +9,8 @@
 .con h2,
 .con h3 {
   font-family: "Arial", sans-serif;
-  animation: fadeIn 1s ease-in-out;
+  animation: scroll-animation;
+  animation-timeline: view(99% auto);
 }
 
 .event {
@@ -32,7 +33,6 @@
   margin-bottom: 8px;
   border-bottom: 2px solid #557c93;
   display: inline-block;
-  animation: slideIn 1s ease-in-out;
 }
 
 .con p {
@@ -40,6 +40,8 @@
   margin-bottom: 10px;
   text-align: justify;
   transition: transform 0.3s ease-in-out;
+  animation: scroll-animation;
+  animation-timeline: view(99% auto);
 }
 
 .con p:hover {
@@ -222,7 +224,7 @@
   }
 }
 
-.con p * *{
-  animation: scroll-animation !important;
+.con p *{
+  animation: scroll-animation;
   animation-timeline: view(99% auto);
 }
