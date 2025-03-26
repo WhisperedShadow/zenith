@@ -6,7 +6,7 @@ const Contact = () => {
     name: "Student Coordinators",
     members: [
       { name: "Harish E", number: "6381524202" },
-      { name: "Anusiya T", number: "6383304738" },
+      { name: "Anusiya T", number: "8838410941" },
       { name: "Priyadharshini R", number: "9025611732" },
       { name: "Sri Vijay S", number: "8610937144" },
     ],
