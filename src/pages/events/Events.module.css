@@ -108,4 +108,14 @@
   .card {
     margin: 30px 0;
   }
+
+
+  .moon{
+    height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  background-color: red;
+  position: absolute;
+  align-items: center;
+  }
 }

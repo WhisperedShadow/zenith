@@ -6,8 +6,8 @@ const Contact = () => {
     name: "Student Coordinators",
     members: [
       { name: "Harish E", number: "6381524202" },
-      { name: "Anusiya T", number: "8838410941" },
-      { name: "Priyadharshini R", number: "9025611732" },
+      { name: "Anusiya T" },
+      { name: "Priyadharshini R" },
       { name: "Sri Vijay S", number: "8610937144" },
     ],
   };
@@ -15,8 +15,9 @@ const Contact = () => {
   const eventOrganizers = {
     name: "Event Organizers",
     members: [
-      { name: "Abraham Kinston A", number: "8903550492" },
+      { name: "Abraham Kingston A", number: "8903550492" },
       { name: "Ashwin K", number: "9360349760" },
+      { name: "Navanethakanan K", number: "6369044958" },
     ],
   };
 
@@ -42,7 +43,7 @@ const Contact = () => {
                     className={styles.memberNumber}
                     aria-label={`Call ${member.name}`}
                   >
-                    📱 {member.number}
+                     {member.number}
                   </a>
                 </div>
               </div>

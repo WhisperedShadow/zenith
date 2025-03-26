@@ -33,7 +33,7 @@ are aimed to develop leadership quality and competency among the
 students. Thus we decided to conduct a National 
 level technical Symposium for the benefit of the students.</p>
           <br/> 
-          <button className={styles.regbtn}><a href="/tech">Register now</a></button>  
+          <button className={styles.regbtn}><a href="https://docs.google.com/forms/d/e/1FAIpQLSemfqZ-VTVttNEUT7LpF8ncHBKD_FCn1Bthf11tjUqUhZfGlg/viewform?usp=header">Register now</a></button>  
 
         </div>
         <div className={styles.logocon}>

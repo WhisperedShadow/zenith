@@ -35,7 +35,6 @@ h4 {
   width: auto;
   position: absolute;
   transform: translateY(100%);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
   animation: bottom-up 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s 1 forwards;
 }
 
@@ -304,7 +303,6 @@ h4 {
     height: 500px;
     width: 550px;
     margin-top: -270px;
-    display: none;
   }
 
   .aboutCon {
