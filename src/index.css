@@ -19,3 +19,8 @@ body{
     background-size: cover;
     background-color: white;
 }
+
+::selection {
+    background-color: black;
+    color : #c10101 ;
+}
